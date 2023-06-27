@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="horizontal"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<com.google.android.material.imageview.ShapeableImageView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/bg"
+    android:src="@drawable/bg2"
+    />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ipl"
+        android:layout_centerHorizontal="true"/>
+ <TextView
+     android:id="@+id/txt1"
+     android:layout_width="wrap_content"
+     android:textSize="20dp"
+     android:layout_height="wrap_content"
+     android:text="IPL - Indian premier Leaged"
+     android:outlineSpotShadowColor="@color/cardview_dark_background"
+     android:layout_centerInParent="true"
+     android:layout_below="@+id/img1"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="true"
+        android:layout_margin="250dp"
+        android:nextFocusLeft="@+id/text2"
+        />
+
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="43dp"
+        android:layout_height="39dp"
+        android:layout_below="@id/txt1"
+        android:layout_marginTop="57dp"
+        android:src="@drawable/csk" />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Chennai Super Kings"
+        android:layout_below="@id/img2"
+        android:textColor="#FF0000"
+        />
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="43dp"
+        android:layout_height="39dp"
+        android:layout_below="@id/text2"
+        android:layout_marginTop="57dp"
+        android:src="@drawable/mumbai" />
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Mumbai Indians"
+        android:layout_below="@id/img3"
+        android:textColor="#FF0000"
+        />
+    <ImageView
+        android:id="@+id/img4"
+        android:layout_width="43dp"
+        android:layout_height="39dp"
+        android:layout_below="@id/txt3"
+        android:layout_marginTop="57dp"
+        android:src="@drawable/delhi" />
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Delhi Devils"
+        android:layout_below="@id/img4"
+        android:textColor="#FF0000"
+        />
+    <ImageView
+        android:id="@+id/img5"
+        android:layout_width="43dp"
+        android:layout_height="39dp"
+        android:layout_below="@id/text4"
+        android:layout_marginTop="57dp"
+        android:src="@drawable/kkr" />
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Kolkata Knight Riders"
+        android:layout_below="@id/img5"
+        android:textColor="#FF0000"
+        />
+
+   <ImageView
+       android:id="@+id/img6"
+       android:layout_width="43dp"
+       android:layout_height="39dp"
+       android:layout_below="@id/text5"
+       android:layout_marginTop="57dp"
+       android:src="@drawable/rcb" />
+   <TextView
+       android:id="@+id/text6"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="20dp"
+       android:text="Royal Challenger Banglore"
+       android:layout_below="@id/img6"
+       android:textColor="#FF0000"
+       />
+
+
+   <Button
+        android:id="@+id/bt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text6"
+        android:layout_centerInParent="true"
+        android:text="contact us"
+       android:layout_margin="40dp"
+       />
+
+
+</RelativeLayout>
