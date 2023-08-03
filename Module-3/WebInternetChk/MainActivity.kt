@@ -21,10 +21,10 @@ class MainActivity : AppCompatActivity() {
         webView.settings.javaScriptEnabled = true // Enable JavaScript for the webpage
 
         if (isInternetAvailable()) {
-            // Internet is available, load the Google URL into the WebView
+           
             webView.loadUrl("https://www.google.com")
 
-            // Set a WebViewClient to manage forward and backward navigation
+           
             webView.webViewClient = object : WebViewClient() {
                 override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
                         view?.loadUrl(url!!)
@@ -33,12 +33,11 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         } else {
-            // Internet is not available, handle the error here (e.g., show a toast)
-            // You can customize this part to show an error message to the user
+           Toast.makeText(this, "No internet connection.", Toast.LENGTH_LONG).show()
         }
     }
 
-    // Function to check internet connectivity
+    
     private fun isInternetAvailable(): Boolean {
         val connectivityManager =
             getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
@@ -53,7 +52,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    // Override the onBackPressed method to handle WebView navigation
+   
     override fun onBackPressed() {
         if (webView.canGoBack()) {
             webView.goBack() // Go back if there's a previous page in the WebView history
