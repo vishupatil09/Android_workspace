@@ -1,0 +1,51 @@
+Example Questions Candidate Might Ask:
+Q: What about an empty string? Is it a valid palindrome?
+A: For the purpose of this problem, we define empty string as valid palindrome 
+Question:
+Given an input string s, reverse the string word by word.
+For example, given s = "the sky is blue", return "blue is sky the".
+Example Questions Candidate Might Ask:
+Q: What constitutes a word?
+A: A sequence of non-space characters constitutes a word.
+Q: Do tab or newline characters count as space characters ?
+A: Assume the input does not contain any tabs or newline characters.
+Q: Could the input string contain leading or trailing spaces?
+A: Yes. However, your reversed string should not contain leading or trailing spaces.
+Q: How about multiple spaces between two words?
+A: Reduce them to a single space in the reversed string. 
+
+Question:
+Reverse digits of an integer. For example: x = 123, return 321.
+Example Questions Candidate Might Ask:
+Q: What about negative integers?
+A: For input x = –123, you should return –321.
+Q: What if the integer’s last digit is 0? For example, x = 10, 100, …
+A: Ignore the leading 0 digits of the reversed integer. 10 and 100 are both reversed
+as 1.
+Q: What if the reversed integer overflows? For example, input x = 1000000003.
+A: In this case, your function should return 0.
+Question:
+Given a number represented as an array of digits, plus one to the number.
+Example Questions Candidate Might Ask:
+Q: Could the number be negative?
+A: No. Assume it is a non-negative number.
+Q: How are the digits ordered in the list? For example, is the number 12 represented
+by [1,2] or
+[2,1]?
+A: The digits are stored such that the most significant digit is at the head of the list.
+Q: Could the number contain leading zeros, such as [0,0,1]?
+A: No.
+Question:
+Determine whether an integer is a palindrome. Do this without extra space.
+Example Questions Candidate Might Ask:
+Q: Does a negative integer such as –1 qualify as a palindrome?
+A: For the purpose of discussion here, we define negative integers as nonpalindrome.
+Given a linked list, swap every two adjacent nodes and return its head.
+For example,
+Given 1 „³ 2 „³ 3 „³ 4, you should return the list as 2 „³ 1 „³ 4 „³ 3.
+Your algorithm should use only constant space. You may not modify the values in
+the
+list, only nodes itself can be changed.
+Example Questions Candidate Might Ask:
+Q: What if the number of nodes in the linked list has only odd number of nodes?
+A: The last node should not be swapped. 
