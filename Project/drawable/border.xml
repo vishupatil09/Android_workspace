@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background Shape -->
+    <item>
+        <shape>
+            <solid android:color="#888888" /> <!-- Dark Grey Color -->
+            <corners android:radius="20dp" /> <!-- Adjust the radius as needed -->
+        </shape>
+    </item>
+    <!-- Foreground Shape (Inset by a few dp) -->
+    <item android:left="3dp" android:right="3dp" android:top="3dp" android:bottom="3dp">
+        <shape>
+            <solid android:color="#FFFFFF" /> <!-- White Color -->
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+</layer-list>
+

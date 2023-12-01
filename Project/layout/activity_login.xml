@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/apex_furniture"
+            android:fontFamily="@font/devil1"
+            android:textColor="#283593"
+            android:textStyle="italic"
+            android:textSize="25sp"
+            android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hey_users"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:fontFamily="@font/bestie"
+        android:textColor="@color/black"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center" >
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:id="@+id/layout_edt3"
+                        style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:endIconMode="clear_text"
+                        app:counterEnabled="true"
+                        app:counterMaxLength="10"
+                        app:helperText="*Requred"
+                        app:helperTextTextColor="#F80202"
+                        app:prefixText="+91"
+                        app:startIconDrawable="@drawable/phone">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edt3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/enter_your_mobile_number"
+                            android:inputType="phone"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:id="@+id/layout_edt4"
+                        style="@style/Widget.Material3.AutoCompleteTextView.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:endIconMode="password_toggle"
+                        app:helperText="*Requred"
+                        app:helperTextTextColor="#F80202"
+                        app:startIconDrawable="@drawable/password">
+
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edt4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/enter_your_password"
+                            android:inputType="textPassword" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/log_in"
+                        android:backgroundTint="#5F17FB" />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSignin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="@string/sign_up"
+                        android:backgroundTint="#5F17FB" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/also_login_with"
+                        android:layout_marginTop="15dp"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/malberg"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="15dp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_weight="1"
+                            android:drawableStart="@drawable/facebook"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp"
+                            android:textAlignment="gravity"
+                            android:backgroundTint="#2962FF"
+                            android:text="@string/facebook"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"/>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_marginStart="3dp"
+                            android:layout_weight="1"
+                            android:drawableStart="@drawable/google"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp"
+                            android:text="@string/google"
+                            android:backgroundTint="#00C853"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+</LinearLayout>

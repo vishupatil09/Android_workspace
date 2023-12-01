@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:background="@drawable/border"
+    android:backgroundTint="#9F816449"
+    android:orientation="vertical"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="16dp"
+    android:layout_marginTop="15dp">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/white"
+                app:shapeAppearanceOverlay="@style/RoundedSquare"
+                app:strokeColor="@color/black"
+                app:strokeWidth="2dp"
+                android:scaleType="fitXY"
+                android:layout_marginEnd="10dp"
+                />
+
+
+            <TextView
+                android:id="@+id/tittle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="abcd"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="250/-"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+
+
+
+</LinearLayout>
