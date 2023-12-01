@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HomeFragment">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <Spinner
+              android:id="@+id/spin1"
+              android:entries="@array/gender"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_weight="1"/>
+          <Spinner
+              android:id="@+id/spin2"
+              android:entries="@array/rashi"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_weight="1"/>
+          <Spinner
+              android:id="@+id/spin3"
+              android:entries="@array/alfhabet"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_weight="1"/>
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <SearchView
+              android:id="@+id/search"
+              android:layout_width="match_parent"
+              android:queryHint="Search here"
+              android:clickable="true"
+
+              android:fitsSystemWindows="true"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"/>
+
+          <TextView
+              android:id="@+id/count"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:textSize="20dp"
+              android:text="Total : "
+              android:textStyle="bold"
+              android:gravity="left"
+              />
+
+      </LinearLayout>
+
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recycler"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+
+
+
+  </LinearLayout>
+
+
+</FrameLayout>

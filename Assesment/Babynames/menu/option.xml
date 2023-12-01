@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:title="home"
+        android:icon="@drawable/home"/>
+
+
+    <item
+        android:id="@+id/rashi"
+        android:title="Rashi"
+        android:icon="@drawable/region"/>
+    <item
+        android:id="@+id/religion"
+        android:title="Religion"
+        android:icon="@drawable/rashi"/>
+    <item
+        android:id="@+id/favorite"
+        android:title="Favorite"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/favorite"/>
+    <item
+        android:id="@+id/share"
+        android:title="Share"
+        android:icon="@drawable/share"/>
+    <item
+        android:id="@+id/developer"
+        android:title="Developer info"
+        android:icon="@drawable/developer"/>
+
+</menu>

@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Baby_Names</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="gender">
+        <item>Select Any One</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="rashi">
+        <item>Select Any One</item>
+        <item>Mesha</item>
+        <item>Vrishabha</item>
+        <item>Mithuna</item>
+        <item>Karka</item>
+        <item>Simha</item>
+        <item>Kanya</item>
+        <item>Tula</item>
+        <item>Vrishchika</item>
+        <item>Dhanu</item>
+        <item>Makara</item>
+        <item>Kumbha</item>
+        <item>Meena</item>
+    </string-array>
+
+
+    <string-array name="alfhabet">
+
+        <item>Select Any One</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+
+    </string-array>
+</resources>
